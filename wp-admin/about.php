@@ -31,7 +31,6 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					?>
 				</h1>
 			</div>
-			
 		</div>
 
 		<nav class="about__header-navigation nav-tab-wrapper wp-clearfix" aria-label="<?php esc_attr_e( 'Secondary menu' ); ?>">
