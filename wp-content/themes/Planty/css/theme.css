@@ -1,1 +1,48 @@
-.test {color:red;}
+.formnousrencontrer {
+    font-family: "Syne";
+}
+
+.formnousrencontrer p {
+    margin-bottom: 20px;
+}
+
+.formnousrencontrer input, .formnousrencontrer textarea {
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 10px;
+    border: unset;
+}
+
+.formnousrencontrer input {
+    height: 71px;
+}
+
+.formnousrencontrer textarea {
+    height: 240px;
+}
+
+.formnousrencontrer .wpcf7-submit {
+    width: 50%;
+    margin: auto;
+}
+
+.boutonnousrencontrer input{
+    display: flex;
+    justify-content: center;
+    width: 198px;
+    height: 55px;
+    border-style: none;
+    background-color: #E0B9B4;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 37px;
+    font-family: 'Syne', sans-serif;
+    color: white;
+    padding : 9px 57px;
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+.boutonnousrencontrer input:hover{
+    background-color: #c02e44;
+}
