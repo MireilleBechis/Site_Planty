@@ -1,48 +1,194 @@
+/* Applique une police "Syne" à tous les éléments de la classe "formnousrencontrer" */
 .formnousrencontrer {
     font-family: "Syne";
 }
 
+/* Ajoute un espacement en bas de chaque paragraphe dans "formnousrencontrer" */
 .formnousrencontrer p {
     margin-bottom: 20px;
 }
 
+/* Définit la largeur, le rayon de bordure, et les marges des champs input et textarea */
 .formnousrencontrer input, .formnousrencontrer textarea {
-    width: 100%;
-    border-radius: 7px;
-    margin-top: 10px;
-    border: unset;
+    width: 100%; /* Les champs prennent toute la largeur disponible */
+    border-radius: 7px; /* Coins arrondis */
+    margin-top: 10px; /* Espace en haut des champs */
+    border: none; /* Supprime la bordure */
 }
 
+/* Définit la hauteur des champs input uniquement */
 .formnousrencontrer input {
     height: 71px;
 }
 
+/* Définit la hauteur du champ textarea uniquement */
 .formnousrencontrer textarea {
     height: 240px;
 }
 
+/* Centrage du bouton de soumission, il prend 50% de la largeur */
 .formnousrencontrer .wpcf7-submit {
     width: 50%;
     margin: auto;
 }
 
-.boutonnousrencontrer input{
+/* Style des boutons dans "boutonformplanty" */
+.boutonformplanty input {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centre le texte à l'intérieur du bouton */
     width: 198px;
     height: 55px;
-    border-style: none;
-    background-color: #E0B9B4;
+    border-style: none; /* Supprime la bordure */
+    background-color: #E0B9B4; /* Couleur de fond du bouton */
     font-size: 15px;
     font-weight: 400;
     line-height: 37px;
     font-family: 'Syne', sans-serif;
     color: white;
-    padding : 9px 57px;
-    transition: all 400ms;
-    cursor: pointer;
+    padding: 9px 57px; /* Padding interne du bouton */
+    transition: all 400ms; /* Transition douce lors des changements d'état */
+    cursor: pointer; /* Changement du curseur au survol */
 }
 
-.boutonnousrencontrer input:hover{
+/* Changement de la couleur de fond du bouton au survol */
+.boutonformplanty input:hover {
     background-color: #c02e44;
+}
+
+/* Flexbox pour organiser les parfums horizontalement avec un espacement entre chaque élément */
+.formselectionparfum {
+    display: flex;
+    justify-content: space-between; /* Ajoute un espace égal entre les parfums */
+    border-style: solid;
+    border-width: 0 0 1px 0; /* Ajoute une bordure en bas uniquement */
+    border-color: white; /* Couleur de la bordure */
+}
+
+/* Centrage du contenu à l'intérieur de chaque bloc "parfum" */
+.parfum {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style des inputs à l'intérieur de "parfum" */
+.parfum input {
+    width: 40px;
+    height: 56px;
+    text-align: center; /* Centre le texte à l'intérieur de l'input */
+    appearance: textfield; /* Supprime les flèches dans certains navigateurs */
+    -moz-appearance: textfield; /* Supprime les flèches dans Firefox */
+    border: none; /* Supprime la bordure */
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/* Organise les éléments dans chaque paragraphe de "parfum" en colonne et centre les éléments */
+.parfum p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Applique la police "Syne" et une couleur blanche aux paragraphes du formulaire */
+.formcommander p {
+    font-family: "Syne";
+    color: white;
+}
+
+/* Applique des styles aux titres h2 dans "formcommander" */
+.formcommander h2 {
+    font-family: "Syne";
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 25px; /* Espacement sous le titre */
+}
+
+/* Ajoute un padding en bas sous "votre-commande" */
+.votre-commande {
+    padding-bottom: 25px;
+}
+
+/* Style des inputs et textarea dans la section "renseignements-livraison" */
+.renseignements-livraison input, .renseignements-livraison textarea {
+    width: 100%; /* Champs prenant toute la largeur */
+    border-radius: 7px; /* Coins arrondis */
+    margin-top: 10px; /* Espace au-dessus des champs */
+    height: 71px; /* Hauteur des champs */
+    border: none; /* Supprime la bordure */
+}
+
+/* Style commun à tous les champs du formulaire */
+.wpcf7-form-control {
+    padding: 15px; /* Padding interne des champs */
+    margin-top: 30px;
+    border-radius: 10px; /* Coins arrondis des champs */
+    width: 100%; /* Assure que les champs prennent toute la largeur disponible */
+}
+
+/* La section "renseignements-livraison" utilise flex pour aligner deux colonnes */
+.renseignements-livraison {
+    display: flex;
+    margin-top: 50px; /* Espacement au-dessus de la section */
+    margin-bottom: 0;
+}   
+
+.renseignements-livraison label, .vos-informations label {
+    display: block;
+    margin-top: 10px;
+}
+/* La colonne "vos-informations" occupe 52% de la largeur totale */
+.vos-informations {
+    display: flex;
+    flex-direction: column;
+    width: 52%; /* Largeur de la colonne */
+    border-style: solid;
+    border-width: 0 1px 0 0; /* Bordure droite */
+    border-color: white; /* Couleur de la bordure */
+    padding-right: 40px; /* Espacement interne à droite */
+}   
+
+/* La colonne "Livraison" occupe 48% de la largeur totale */
+.Livraison {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Largeur de la colonne */
+    padding-left: 40px; /* Espacement interne à gauche */
+}  
+
+/* Centrage du formulaire de fin */
+.finformulaire {
+    display: flex;
+    justify-content: center; /* Centre le contenu */
+    margin-top: 50px; /* Espacement en haut du formulaire */
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+/* Flexbox pour organiser les parfums horizontalement avec un espacement entre chaque élément */
+
+.formselectionparfum {
+    flex-direction: column; 
+}
+
+.renseignements-livraison {
+    flex-direction: column; 
+    gap: 40px;
+}  
+
+.vos-informations {
+    width: 100%;
+    border-color: transparent; /* Couleur de la bordure */
+    padding-right: 0px;
+} 
+
+.Livraison {
+    width: 100%; /* Largeur de la colonne */
+    padding-left: 0px; /* Espacement interne à gauche */
+}  
+
+.formcommander h2 {
+    text-align: center;
+}
+
 }
