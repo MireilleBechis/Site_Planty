@@ -1,3 +1,86 @@
+/* Styles pour l'en-tête */
+header {
+    display: flex;
+    justify-content: space-between; /* Logo à gauche et liens à droite */
+    align-items: center;
+    background-color: #fff; /* Ajuste selon le design */
+    box-sizing: border-box;
+}
+
+.menuplanty {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Aligne verticalement l'image du logo */
+}
+
+/* Style pour le logo à gauche */
+.logo img {
+    height: 40px; /* Ajuste la taille du logo */
+    vertical-align: middle;
+}
+
+/* Menu aligné à droite */
+.nav-menu {
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 80px;
+}
+
+.nav-menu li {
+    margin-right: 20px; /* Ajoute un espacement entre les liens */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    color: #333; /* Couleur des liens par défaut */
+    transition: color 0.3s ease;
+}
+
+.special-link a {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    color: white; 
+    background-color: #dc9f96;
+    text-decoration: none;
+    padding: 30px 50px;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.special-link a:hover {
+    background-color: #c02e44;
+    color: white!important; /* Le texte devient blanc au survol */
+}
+.nav-menu a:hover {
+    color: #E0B9B4; /* Couleur au survol */
+}
+
+#copyright {
+    display: flex;
+    justify-content:center;
+    color: white; 
+    height: 50px;
+}
+
+#copyright a {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+
 /* Applique une police "Syne" à tous les éléments de la classe "formnousrencontrer" */
 .formnousrencontrer {
     font-family: "Syne";
@@ -26,10 +109,16 @@
     height: 240px;
 }
 
-/* Centrage du bouton de soumission, il prend 50% de la largeur */
+/* Centrage du bouton de soumission*/
 .formnousrencontrer .wpcf7-submit {
-    width: 50%;
-    margin: auto;
+    display: flex;
+    justify-content: center; /* Centre le texte à l'intérieur du bouton */
+    width: 198px;
+    height: 55px;
+}
+.boutonformplanty {
+display: flex;
+justify-content: center;
 }
 
 /* Style des boutons dans "boutonformplanty" */
@@ -39,6 +128,7 @@
     width: 198px;
     height: 55px;
     border-style: none; /* Supprime la bordure */
+    border-radius: 7px; /* Coins arrondis */
     background-color: #E0B9B4; /* Couleur de fond du bouton */
     font-size: 15px;
     font-weight: 400;
