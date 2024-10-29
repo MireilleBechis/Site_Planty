@@ -1,4 +1,4 @@
-/* Header styles - Organisation du menu et du logo */
+/* === Header Styles === */
 header {
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,7 @@ header {
     box-sizing: border-box;
 }
 
-/* Logo styles */
+/* === Logo Styles === */
 .logo {
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@ header {
     vertical-align: middle;
 }
 
-/* Menu principal */
+/* === Main Menu Styles === */
 .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -36,7 +36,7 @@ header {
 }
 
 .nav-menu li {
-    margin-right: 20px;
+    margin-right: 80px;
 }
 
 .nav-menu a {
@@ -47,9 +47,13 @@ header {
     transition: color 0.3s ease;
 }
 
-/* Styles du bouton hamburger */
+#menu-header-menu {
+    display: flex;
+}
+
+/* === Hamburger Button Styles === */
 .menu-toggle {
-    display: none; /* Caché par défaut sur desktop */
+    display: none; /* Hidden by default on desktop */
     background: none;
     border: none;
     cursor: pointer;
@@ -66,15 +70,14 @@ header {
     transition: all 0.3s ease;
 }
 
-/* Style spécifique pour le lien "Commander" */
+/* === "Commander" Link Styles === */
 .special-link a {
     font-family: 'Syne', sans-serif;
     font-size: 18px;
-    color: white; 
+    color: white;
     background-color: #dc9f96;
     text-decoration: none;
     padding: 30px 50px;
-    margin: 0;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -87,11 +90,11 @@ header {
     color: #E0B9B4;
 }
 
-/* Footer copyright */
+/* === Footer Copyright === */
 #copyright {
     display: flex;
     justify-content: center;
-    color: white; 
+    color: white;
     height: 50px;
 }
 
@@ -103,7 +106,7 @@ header {
     padding-top: 20px;
 }
 
-/* Styles du formulaire "Nous rencontrer" */
+/* === Form "Nous Rencontrer" Styles === */
 .formnousrencontrer {
     font-family: "Syne";
 }
@@ -128,7 +131,7 @@ header {
     height: 240px;
 }
 
-/* Style du bouton de soumission */
+/* === Form Submit Button === */
 .formnousrencontrer .wpcf7-submit {
     display: flex;
     justify-content: center;
@@ -136,15 +139,12 @@ header {
     height: 55px;
 }
 
-/* Conteneur du bouton formulaire */
 .boutonformplanty {
     display: flex;
     justify-content: center;
 }
 
 .boutonformplanty input {
-    display: flex;
-    justify-content: center;
     width: 198px;
     height: 55px;
     border: none;
@@ -164,13 +164,11 @@ header {
     background-color: #c02e44;
 }
 
-/* Section de sélection des parfums */
+/* === Flavor Selection Section === */
 .formselectionparfum {
     display: flex;
     justify-content: space-between;
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    border-color: white;
+    border-bottom: 1px solid white;
 }
 
 .parfum {
@@ -185,8 +183,7 @@ header {
     appearance: textfield;
     -moz-appearance: textfield;
     border: none;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin: 15px 0 25px;
 }
 
 .parfum p {
@@ -195,15 +192,13 @@ header {
     align-items: center;
 }
 
-/* Styles du formulaire de commande */
-.formcommander p {
+/* === Order Form Styles === */
+.formcommander p, .formcommander h2 {
     font-family: "Syne";
     color: white;
 }
 
 .formcommander h2 {
-    font-family: "Syne";
-    color: white;
     font-size: 30px;
     font-weight: 700;
     padding-bottom: 25px;
@@ -213,7 +208,7 @@ header {
     padding-bottom: 25px;
 }
 
-/* Styles des champs de livraison */
+/* === Delivery Form Fields === */
 .renseignements-livraison input, 
 .renseignements-livraison textarea {
     width: 100%;
@@ -223,7 +218,6 @@ header {
     border: none;
 }
 
-/* Styles communs des champs de formulaire */
 .wpcf7-form-control {
     padding: 15px;
     margin-top: 30px;
@@ -231,12 +225,11 @@ header {
     width: 100%;
 }
 
-/* Organisation des sections de livraison */
+/* === Delivery Sections Layout === */
 .renseignements-livraison {
     display: flex;
     margin-top: 50px;
-    margin-bottom: 0;
-}   
+}
 
 .renseignements-livraison label, 
 .vos-informations label {
@@ -248,18 +241,16 @@ header {
     display: flex;
     flex-direction: column;
     width: 52%;
-    border-style: solid;
-    border-width: 0 1px 0 0;
-    border-color: white;
+    border-right: 1px solid white;
     padding-right: 40px;
-}   
+}
 
 .Livraison {
     display: flex;
     flex-direction: column;
     width: 48%;
     padding-left: 40px;
-}  
+}
 
 .finformulaire {
     display: flex;
@@ -267,88 +258,86 @@ header {
     margin-top: 50px;
 }
 
-/* Responsive design pour petits écrans */
+/* === Responsive Design for Small Screens === */
 @media (max-width: 767.98px) {
     .formselectionparfum {
         flex-direction: column; 
     }
 
     .renseignements-livraison {
-        flex-direction: column; 
+        flex-direction: column;
         gap: 40px;
-    }  
+    }
 
-    .vos-informations {
+    .vos-informations, .Livraison {
         width: 100%;
-        border-color: transparent;
-        padding-right: 0;
-    } 
-
-    .Livraison {
-        width: 100%;
-        padding-left: 0;
-    }  
+        padding: 0;
+        border: none;
+    }
 
     .formcommander h2 {
         text-align: center;
     }
 
-        /* Affiche le bouton hamburger */
-        .menu-toggle {
-            display: block;
-        }
+    /* Display Hamburger Menu Button */
+    .menu-toggle {
+        display: block;
+    }
 
-        header {
-            display: flex !important;
-            flex-direction:row-reverse;
-        }
-    
-        /* Cache le menu par défaut sur mobile */
-       .menuplanty {
-            display: none;
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 80%;
-            height: 100vh;
-            background-color: white;
-            flex-direction: column;
-            justify-content: flex-start;
-            padding: 80px 10px;
-            transition: right 0.3s ease;
-            z-index: 99;
-        }
+    /* Adjust Header Layout for Mobile */
+    header {
+        flex-direction: row-reverse;
+    }
 
-        /* Affiche le menu quand il est actif */
-        .menuplanty.active {
-            display: flex;
-            right: 0;
-        }
-    
-        /* Ajuste les éléments du menu */
-        .menuplanty li {
-            margin: 10px 0;
-            width: 100%;
-            text-align: center;
-        }
-    
-        /* Ajuste le lien spécial */
-        .special-link a {
-            padding: 10px 20px;
-            display: inline-block;
-            width: auto;
-        }
-    
-        /* Animation du bouton hamburger quand le menu est ouvert */
-        .menu-toggle.active span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-    
-        .menu-toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-    
-        .menu-toggle.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -7px);
-        }
+    /* Hide and Style Mobile Menu */
+    .menuplanty {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 80px 10px;
+        transition: right 0.3s ease;
+        z-index: 99;
+    }
+
+    .menuplanty.active {
+        display: flex;
+        right: 0;
+    }
+
+    #menu-header-menu {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .menuplanty li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Style for "Commander" Button in Mobile Menu */
+    .special-link a {
+        padding: 10px 20px;
+        display: inline-block;
+        width: auto;
+    }
+
+    /* Hamburger Button Animation */
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
 }

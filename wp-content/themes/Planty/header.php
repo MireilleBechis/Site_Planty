@@ -11,7 +11,7 @@
             <span></span>
             <span></span>
         </button>
-        <nav class="nav-menu">
+        <nav class="nav-menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <!-- Logo à gauche -->
             <div class="logo">
                 <a href="<?php echo home_url(); ?>">
