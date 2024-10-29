@@ -1,34 +1,34 @@
-/* Styles pour l'en-tête */
+/* Header styles - Organisation du menu et du logo */
 header {
     display: flex;
-    justify-content: space-between; /* Logo à gauche et liens à droite */
+    justify-content: space-between;
     align-items: center;
-    background-color: #fff; /* Ajuste selon le design */
+    background-color: #fff;
     box-sizing: border-box;
 }
 
 .menuplanty {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
 }
 
+/* Logo styles */
 .logo {
     display: flex;
-    align-items: center; /* Aligne verticalement l'image du logo */
+    align-items: center;
 }
 
-/* Style pour le logo à gauche */
 .logo img {
-    height: 40px; /* Ajuste la taille du logo */
+    height: 40px;
     vertical-align: middle;
 }
 
-/* Menu aligné à droite */
+/* Menu principal */
 .nav-menu {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -36,17 +36,37 @@ header {
 }
 
 .nav-menu li {
-    margin-right: 20px; /* Ajoute un espacement entre les liens */
+    margin-right: 20px;
 }
 
 .nav-menu a {
     text-decoration: none;
     font-family: 'Syne', sans-serif;
     font-size: 18px;
-    color: #333; /* Couleur des liens par défaut */
+    color: #333;
     transition: color 0.3s ease;
 }
 
+/* Styles du bouton hamburger */
+.menu-toggle {
+    display: none; /* Caché par défaut sur desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 100;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Style spécifique pour le lien "Commander" */
 .special-link a {
     font-family: 'Syne', sans-serif;
     font-size: 18px;
@@ -60,15 +80,17 @@ header {
 
 .special-link a:hover {
     background-color: #c02e44;
-    color: white!important; /* Le texte devient blanc au survol */
-}
-.nav-menu a:hover {
-    color: #E0B9B4; /* Couleur au survol */
+    color: white !important;
 }
 
+.nav-menu a:hover {
+    color: #E0B9B4;
+}
+
+/* Footer copyright */
 #copyright {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     color: white; 
     height: 50px;
 }
@@ -81,204 +103,252 @@ header {
     padding-top: 20px;
 }
 
-/* Applique une police "Syne" à tous les éléments de la classe "formnousrencontrer" */
+/* Styles du formulaire "Nous rencontrer" */
 .formnousrencontrer {
     font-family: "Syne";
 }
 
-/* Ajoute un espacement en bas de chaque paragraphe dans "formnousrencontrer" */
 .formnousrencontrer p {
     margin-bottom: 20px;
 }
 
-/* Définit la largeur, le rayon de bordure, et les marges des champs input et textarea */
-.formnousrencontrer input, .formnousrencontrer textarea {
-    width: 100%; /* Les champs prennent toute la largeur disponible */
-    border-radius: 7px; /* Coins arrondis */
-    margin-top: 10px; /* Espace en haut des champs */
-    border: none; /* Supprime la bordure */
+.formnousrencontrer input, 
+.formnousrencontrer textarea {
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 10px;
+    border: none;
 }
 
-/* Définit la hauteur des champs input uniquement */
 .formnousrencontrer input {
     height: 71px;
 }
 
-/* Définit la hauteur du champ textarea uniquement */
 .formnousrencontrer textarea {
     height: 240px;
 }
 
-/* Centrage du bouton de soumission*/
+/* Style du bouton de soumission */
 .formnousrencontrer .wpcf7-submit {
     display: flex;
-    justify-content: center; /* Centre le texte à l'intérieur du bouton */
+    justify-content: center;
     width: 198px;
     height: 55px;
-}
-.boutonformplanty {
-display: flex;
-justify-content: center;
 }
 
-/* Style des boutons dans "boutonformplanty" */
+/* Conteneur du bouton formulaire */
+.boutonformplanty {
+    display: flex;
+    justify-content: center;
+}
+
 .boutonformplanty input {
     display: flex;
-    justify-content: center; /* Centre le texte à l'intérieur du bouton */
+    justify-content: center;
     width: 198px;
     height: 55px;
-    border-style: none; /* Supprime la bordure */
-    border-radius: 7px; /* Coins arrondis */
-    background-color: #E0B9B4; /* Couleur de fond du bouton */
+    border: none;
+    border-radius: 7px;
+    background-color: #E0B9B4;
     font-size: 15px;
     font-weight: 400;
     line-height: 37px;
     font-family: 'Syne', sans-serif;
     color: white;
-    padding: 9px 57px; /* Padding interne du bouton */
-    transition: all 400ms; /* Transition douce lors des changements d'état */
-    cursor: pointer; /* Changement du curseur au survol */
+    padding: 9px 57px;
+    transition: all 400ms;
+    cursor: pointer;
 }
 
-/* Changement de la couleur de fond du bouton au survol */
 .boutonformplanty input:hover {
     background-color: #c02e44;
 }
 
-/* Flexbox pour organiser les parfums horizontalement avec un espacement entre chaque élément */
+/* Section de sélection des parfums */
 .formselectionparfum {
     display: flex;
-    justify-content: space-between; /* Ajoute un espace égal entre les parfums */
+    justify-content: space-between;
     border-style: solid;
-    border-width: 0 0 1px 0; /* Ajoute une bordure en bas uniquement */
-    border-color: white; /* Couleur de la bordure */
+    border-width: 0 0 1px 0;
+    border-color: white;
 }
 
-/* Centrage du contenu à l'intérieur de chaque bloc "parfum" */
 .parfum {
     display: flex;
     justify-content: center;
 }
 
-/* Style des inputs à l'intérieur de "parfum" */
 .parfum input {
     width: 40px;
     height: 56px;
-    text-align: center; /* Centre le texte à l'intérieur de l'input */
-    appearance: textfield; /* Supprime les flèches dans certains navigateurs */
-    -moz-appearance: textfield; /* Supprime les flèches dans Firefox */
-    border: none; /* Supprime la bordure */
+    text-align: center;
+    appearance: textfield;
+    -moz-appearance: textfield;
+    border: none;
     margin-top: 15px;
     margin-bottom: 25px;
 }
 
-/* Organise les éléments dans chaque paragraphe de "parfum" en colonne et centre les éléments */
 .parfum p {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Applique la police "Syne" et une couleur blanche aux paragraphes du formulaire */
+/* Styles du formulaire de commande */
 .formcommander p {
     font-family: "Syne";
     color: white;
 }
 
-/* Applique des styles aux titres h2 dans "formcommander" */
 .formcommander h2 {
     font-family: "Syne";
     color: white;
     font-size: 30px;
     font-weight: 700;
-    padding-bottom: 25px; /* Espacement sous le titre */
+    padding-bottom: 25px;
 }
 
-/* Ajoute un padding en bas sous "votre-commande" */
 .votre-commande {
     padding-bottom: 25px;
 }
 
-/* Style des inputs et textarea dans la section "renseignements-livraison" */
-.renseignements-livraison input, .renseignements-livraison textarea {
-    width: 100%; /* Champs prenant toute la largeur */
-    border-radius: 7px; /* Coins arrondis */
-    margin-top: 10px; /* Espace au-dessus des champs */
-    height: 71px; /* Hauteur des champs */
-    border: none; /* Supprime la bordure */
+/* Styles des champs de livraison */
+.renseignements-livraison input, 
+.renseignements-livraison textarea {
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 10px;
+    height: 71px;
+    border: none;
 }
 
-/* Style commun à tous les champs du formulaire */
+/* Styles communs des champs de formulaire */
 .wpcf7-form-control {
-    padding: 15px; /* Padding interne des champs */
+    padding: 15px;
     margin-top: 30px;
-    border-radius: 10px; /* Coins arrondis des champs */
-    width: 100%; /* Assure que les champs prennent toute la largeur disponible */
+    border-radius: 10px;
+    width: 100%;
 }
 
-/* La section "renseignements-livraison" utilise flex pour aligner deux colonnes */
+/* Organisation des sections de livraison */
 .renseignements-livraison {
     display: flex;
-    margin-top: 50px; /* Espacement au-dessus de la section */
+    margin-top: 50px;
     margin-bottom: 0;
 }   
 
-.renseignements-livraison label, .vos-informations label {
+.renseignements-livraison label, 
+.vos-informations label {
     display: block;
     margin-top: 10px;
 }
-/* La colonne "vos-informations" occupe 52% de la largeur totale */
+
 .vos-informations {
     display: flex;
     flex-direction: column;
-    width: 52%; /* Largeur de la colonne */
+    width: 52%;
     border-style: solid;
-    border-width: 0 1px 0 0; /* Bordure droite */
-    border-color: white; /* Couleur de la bordure */
-    padding-right: 40px; /* Espacement interne à droite */
+    border-width: 0 1px 0 0;
+    border-color: white;
+    padding-right: 40px;
 }   
 
-/* La colonne "Livraison" occupe 48% de la largeur totale */
 .Livraison {
     display: flex;
     flex-direction: column;
-    width: 48%; /* Largeur de la colonne */
-    padding-left: 40px; /* Espacement interne à gauche */
+    width: 48%;
+    padding-left: 40px;
 }  
 
-/* Centrage du formulaire de fin */
 .finformulaire {
     display: flex;
-    justify-content: center; /* Centre le contenu */
-    margin-top: 50px; /* Espacement en haut du formulaire */
+    justify-content: center;
+    margin-top: 50px;
 }
 
-/* Small devices (phones, less than 768px) */
+/* Responsive design pour petits écrans */
 @media (max-width: 767.98px) {
-/* Flexbox pour organiser les parfums horizontalement avec un espacement entre chaque élément */
+    .formselectionparfum {
+        flex-direction: column; 
+    }
 
-.formselectionparfum {
-    flex-direction: column; 
-}
+    .renseignements-livraison {
+        flex-direction: column; 
+        gap: 40px;
+    }  
 
-.renseignements-livraison {
-    flex-direction: column; 
-    gap: 40px;
-}  
+    .vos-informations {
+        width: 100%;
+        border-color: transparent;
+        padding-right: 0;
+    } 
 
-.vos-informations {
-    width: 100%;
-    border-color: transparent; /* Couleur de la bordure */
-    padding-right: 0px;
-} 
+    .Livraison {
+        width: 100%;
+        padding-left: 0;
+    }  
 
-.Livraison {
-    width: 100%; /* Largeur de la colonne */
-    padding-left: 0px; /* Espacement interne à gauche */
-}  
+    .formcommander h2 {
+        text-align: center;
+    }
 
-.formcommander h2 {
-    text-align: center;
-}
+        /* Affiche le bouton hamburger */
+        .menu-toggle {
+            display: block;
+        }
 
+        header {
+            display: flex !important;
+            flex-direction:row-reverse;
+        }
+    
+        /* Cache le menu par défaut sur mobile */
+       .menuplanty {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            height: 100vh;
+            background-color: white;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 80px 10px;
+            transition: right 0.3s ease;
+            z-index: 99;
+        }
+
+        /* Affiche le menu quand il est actif */
+        .menuplanty.active {
+            display: flex;
+            right: 0;
+        }
+    
+        /* Ajuste les éléments du menu */
+        .menuplanty li {
+            margin: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+    
+        /* Ajuste le lien spécial */
+        .special-link a {
+            padding: 10px 20px;
+            display: inline-block;
+            width: auto;
+        }
+    
+        /* Animation du bouton hamburger quand le menu est ouvert */
+        .menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+    
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+    
+        .menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
 }
