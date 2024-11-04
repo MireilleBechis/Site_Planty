@@ -28,9 +28,9 @@
                 ));
                 ?>
                 <!-- Lien "Commander" à droite -->
-                <div class="special-link">
+<!--                 <div class="special-link">
                     <a href="/commander">Commander</a>
-                </div>
+                </div> -->
             </div>
         </nav>
     </header>

@@ -23,8 +23,8 @@ add_action('init', 'register_my_menus');
 function add_admin_link_to_menu($items, $args) {
     // Vérifie si l'utilisateur est connecté et si le menu est le menu principal
     if (is_user_logged_in() && $args->theme_location === 'header-menu') {
-        // Crée un lien "Admin" avec une classe personnalisée pour le style
-        $admin_link = '<li class="menu-item admin-link"><a href="' . admin_url() . '">Admin</a></li>';
+        // Crée un lien "Admin" 
+        $admin_link = '<li><a href="' . admin_url() . '">Admin</a></li>';
         $items .= $admin_link; // Ajoute le lien "Admin" à la fin du menu
     }
     return $items;

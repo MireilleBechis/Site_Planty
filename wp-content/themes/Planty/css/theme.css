@@ -71,7 +71,7 @@ header {
 }
 
 /* === "Commander" Link Styles === */
-.special-link a {
+#menu-item-310 a {
     font-family: 'Syne', sans-serif;
     font-size: 18px;
     color: white;
@@ -81,13 +81,18 @@ header {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.special-link a:hover {
+#menu-item-310 a:hover {
     background-color: #c02e44;
     color: white !important;
 }
 
 .nav-menu a:hover {
     color: #E0B9B4;
+}
+
+#menu-item-310 {
+    order: 2;
+    margin-right: 0;
 }
 
 /* === Footer Copyright === */
@@ -305,6 +310,10 @@ header {
         z-index: 99;
     }
 
+    #menu-item-310 {
+        margin-top: 40px;
+    }
+    
     .menuplanty.active {
         display: flex;
         right: 0;
