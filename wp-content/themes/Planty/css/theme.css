@@ -263,6 +263,12 @@ header {
     margin-top: 50px;
 }
 
+.finformulaire p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* === Responsive Design for Small Screens === */
 @media (max-width: 767.98px) {
     .formselectionparfum {
